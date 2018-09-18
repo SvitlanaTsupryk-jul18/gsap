@@ -105,6 +105,10 @@
             opacity: 1,
             y: -100
         });
+        var s2 = TweenMax.to("#space2", 0.5, {
+            opacity: 1,
+            y: -100
+        });
        
         var controller = new ScrollMagic.Controller();
 
@@ -120,15 +124,16 @@
                 triggerElement: "#space2"
             })
                     .setTween(s1);
+       .setTween(s2);
         controller.addScene([
-            scene
+            scene2
         ]);
-          var scene = new ScrollMagic.Scene({
+          var scene3 = new ScrollMagic.Scene({
                 triggerElement: "#space3"
             })
                      .setTween(s1);
         controller.addScene([
-            scene
+            scene3
         ]);
     </script>
 
