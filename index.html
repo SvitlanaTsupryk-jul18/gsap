@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem</title>
+    <title>GSAP</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
@@ -42,7 +42,7 @@
 
     </div>
 
-    <!-- <script>
+    <!--1    <script>
         // init
         var ctrl = new ScrollMagic.Controller({
             globalSceneOptions: {
@@ -61,6 +61,22 @@
                 .addTo(ctrl);
         });
     </script> -->
+    
+    <!--2   <script>
+        // build scene
+        var scene = new ScrollMagic.Scene({
+                triggerElement: ".page"
+            })
+            .addTWeen(TweenMax.to(".slideInUp", 1, {
+                opacity: 1,
+                y: -50
+            })) // trigger a TweenMax.to tween
+            .addIndicators({
+                name: "1 (duration: 0)"
+            }) // add indicators (requires plugin)
+            .addTo(controller);
+    </script>-->
+    
 
     <script>
         // build scene
