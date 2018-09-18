@@ -77,6 +77,27 @@
             }) // add indicators (requires plugin)
             .addTo(controller);
     </script>
+-->
+ <!---3 <script>
+        var controller = new ScrollMagic.Controller();
+
+        $('.slideInUp').each(function() {
+
+                    // build  a tween
+                    var tween = TweenMax.from($(this), 1, {
+                        {
+                            opacity: 1,
+                            y: -100
+                        });
+
+                        // build a scene
+                        var scene = new ScrollMagic.Scene({
+                                triggerElement: this
+                            })
+                            .setTween(tween)
+                            .addTo(controller);
+                    });
+    </script>
     -->
    <script>
         // build scene
@@ -84,29 +105,28 @@
             opacity: 1,
             y: -100
         });
+       
         var controller = new ScrollMagic.Controller();
 
         var scene = new ScrollMagic.Scene({
-                triggerElement: "#space1"
+                triggerElement: ".slideInUp"
             })
             // trigger a TweenMax.to tween
             .setTween(s1);
         controller.addScene([
             scene
         ]);
-        var scene = new ScrollMagic.Scene({
+        var scene2 = new ScrollMagic.Scene({
                 triggerElement: "#space2"
             })
-            // trigger a TweenMax.to tween
-            .setTween(s1);
+                    .setTween(s1);
         controller.addScene([
             scene
         ]);
           var scene = new ScrollMagic.Scene({
                 triggerElement: "#space3"
             })
-            // trigger a TweenMax.to tween
-            .setTween(s1);
+                     .setTween(s1);
         controller.addScene([
             scene
         ]);
