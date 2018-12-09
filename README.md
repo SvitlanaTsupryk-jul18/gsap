@@ -1,2 +1,2 @@
-[# gsap](https://svitlanatsupryk-jul18.github.io/gsap/)
-заработало только благодаря Ане и только на GitHubе?
+#[ gsap](https://svitlanatsupryk-jul18.github.io/gsap/)
+
